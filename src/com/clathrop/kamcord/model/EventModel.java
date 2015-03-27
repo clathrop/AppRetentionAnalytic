@@ -1,4 +1,4 @@
-package model;
+package com.clathrop.kamcord.model;
 
 public class EventModel {
 	

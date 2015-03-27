@@ -1,4 +1,4 @@
-package kamcordjava;
+package com.clathrop.kamcord.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

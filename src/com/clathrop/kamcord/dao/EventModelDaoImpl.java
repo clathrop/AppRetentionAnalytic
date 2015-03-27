@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import kamcordjava.MyDatabase;
-import model.EventModel;
+import com.clathrop.kamcord.db.MyDatabase;
+import com.clathrop.kamcord.model.EventModel;
 
 public class EventModelDaoImpl implements EventModelDao {
 

@@ -1,4 +1,4 @@
-package kamcordjava;
+package com.clathrop.kamcord.app;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -13,8 +13,7 @@ import java.util.Map.Entry;
 
 import com.clathrop.kamcord.dao.EventModelDao;
 import com.clathrop.kamcord.dao.EventModelDaoImpl;
-
-import model.EventModel;
+import com.clathrop.kamcord.model.EventModel;
 
 public class Main {
 	

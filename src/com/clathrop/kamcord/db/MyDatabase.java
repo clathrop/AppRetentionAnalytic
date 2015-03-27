@@ -1,4 +1,4 @@
-package kamcordjava;
+package com.clathrop.kamcord.db;
 
 public class MyDatabase extends Database {
 

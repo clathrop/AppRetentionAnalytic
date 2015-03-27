@@ -2,7 +2,7 @@ package com.clathrop.kamcord.dao;
 
 import java.util.List;
 
-import model.EventModel;
+import com.clathrop.kamcord.model.EventModel;
 
 public interface EventModelDao {
 	
