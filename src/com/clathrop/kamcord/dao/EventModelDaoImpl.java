@@ -63,15 +63,18 @@ public class EventModelDaoImpl implements EventModelDao {
 			try {
 				rs.close();
 			} catch (SQLException e1) {
+				e1.printStackTrace();
 			}
 			try {
 				stmt.close();
 			} catch (SQLException e2) {
+				e2.printStackTrace();
 			}
-//			try {
-//				conn.close();
-//			} catch (SQLException e3) {
-//			}
+			try {
+				conn.close();
+			} catch (SQLException e3) {
+				e3.printStackTrace();
+			}
 		}
 	}
 
@@ -105,15 +108,18 @@ public class EventModelDaoImpl implements EventModelDao {
 			try {
 				rs.close();
 			} catch (SQLException e1) {
+				e1.printStackTrace();
 			}
 			try {
 				stmt.close();
 			} catch (SQLException e2) {
+				e2.printStackTrace();
 			}
-//			try {
-//				conn.close();
-//			} catch (SQLException e3) {
-//			}
+			try {
+				conn.close();
+			} catch (SQLException e3) {
+				e3.printStackTrace();
+			}
 		}
 	}
 
@@ -152,15 +158,18 @@ public class EventModelDaoImpl implements EventModelDao {
 			try {
 				rs.close();
 			} catch (SQLException e1) {
+				e1.printStackTrace();
 			}
 			try {
 				stmt.close();
 			} catch (SQLException e2) {
+				e2.printStackTrace();
 			}
-//			try {
-//				conn.close();
-//			} catch (SQLException e3) {
-//			}
+			try {
+				conn.close();
+			} catch (SQLException e3) {
+				e3.printStackTrace();
+			}
 		}
 	}
 
@@ -198,15 +207,18 @@ public class EventModelDaoImpl implements EventModelDao {
 			try {
 				rs.close();
 			} catch (SQLException e1) {
+				e1.printStackTrace();
 			}
 			try {
 				stmt.close();
 			} catch (SQLException e2) {
+				e2.printStackTrace();
 			}
-//			try {
-//				conn.close();
-//			} catch (SQLException e3) {
-//			}
+			try {
+				conn.close();
+			} catch (SQLException e3) {
+				e3.printStackTrace();
+			}
 		}
 	}
 
