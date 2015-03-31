@@ -68,17 +68,17 @@ public class EventModelDaoImpl implements EventModelDao {
 				stmt.close();
 			} catch (SQLException e2) {
 			}
-			try {
-				conn.close();
-			} catch (SQLException e3) {
-			}
+//			try {
+//				conn.close();
+//			} catch (SQLException e3) {
+//			}
 		}
 	}
 
 	@Override
 	public List<EventModel> findEventsByDateRange(String d1, String d2) {
 
-		String selectQuery = "SELECT * FROM sdkdata WHERE event_name = 'UI_OPEN_COUNT' AND event_time BETWEEN '"
+		String selectQuery = "SELECT event_time, user_id FROM sdkdata WHERE event_name = 'UI_OPEN_COUNT' AND event_time BETWEEN '"
 				+ d1 + "' AND '" + d2 + "';";
 		List<EventModel> eventList = new ArrayList<EventModel>();
 
@@ -90,15 +90,9 @@ public class EventModelDaoImpl implements EventModelDao {
 
 			while (rs.next()) {
 				String userId = rs.getString(USER_ID);
-				String eventCount = rs.getString(EVENT_COUNT);
-				String eventName = rs.getString(EVENT_NAME);
 				String eventTime = rs.getString(EVENT_TIME);
-				String osName = rs.getString(OS_NAME);
-				String sdkVersion = rs.getString(SDK_VERSION);
 
-				EventModel event = new EventModel(userId,
-						Integer.parseInt(eventCount), eventName, eventTime,
-						osName, sdkVersion);
+				EventModel event = new EventModel(userId, eventTime);
 				eventList.add(event);
 			}
 
@@ -116,10 +110,10 @@ public class EventModelDaoImpl implements EventModelDao {
 				stmt.close();
 			} catch (SQLException e2) {
 			}
-			try {
-				conn.close();
-			} catch (SQLException e3) {
-			}
+//			try {
+//				conn.close();
+//			} catch (SQLException e3) {
+//			}
 		}
 	}
 
@@ -163,10 +157,10 @@ public class EventModelDaoImpl implements EventModelDao {
 				stmt.close();
 			} catch (SQLException e2) {
 			}
-			try {
-				conn.close();
-			} catch (SQLException e3) {
-			}
+//			try {
+//				conn.close();
+//			} catch (SQLException e3) {
+//			}
 		}
 	}
 
@@ -209,10 +203,10 @@ public class EventModelDaoImpl implements EventModelDao {
 				stmt.close();
 			} catch (SQLException e2) {
 			}
-			try {
-				conn.close();
-			} catch (SQLException e3) {
-			}
+//			try {
+//				conn.close();
+//			} catch (SQLException e3) {
+//			}
 		}
 	}
 

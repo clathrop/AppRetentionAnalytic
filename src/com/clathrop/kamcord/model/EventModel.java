@@ -9,7 +9,10 @@ public class EventModel {
 	private String osName;
 	private String sdkVersion;
 	
-	
+	public EventModel(String userId, String eventTime){
+		setUserId(userId);
+		setEventTime(eventTime);
+	}
 	public EventModel(String userId, Integer eventCount, String eventName,
 			String eventTime, String osName, String sdkVersion) {
 		setUserId(userId);
